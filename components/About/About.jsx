@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./about.module.css";
+import aries from "../../public/aries.png";
 
 const About = () => {
 	return (
@@ -12,24 +13,29 @@ const About = () => {
 				</div>
 				<div className={styles.container_items}>
 					<div className={styles.container_item_2}>
-						<h1>Brandon Hach</h1>
-						<p>Digital Craftsman ( Artist / Developer / Designer )</p>
+						<div className={styles.item_2_left}>
+							<h1>Brandon Hach</h1>
+							<p>UNC Charlotte ( Student / Developer )</p>
+						</div>
+						<div className={styles.item_2_right}>
+							<img src={aries} alt="" height={100} width={100} />
+						</div>
 					</div>
 				</div>
 				<div className={styles.container_items}>
 					<div className={styles.container_item_3}>
 						<h2>Work</h2>
 						<p>About myself bla bla bla</p>
-						<button>My Portfolio!</button>
 					</div>
+					<button>My Portfolio!</button>
 				</div>
 				<div className={styles.container_items}>
 					<div className={styles.container_item_4}>
-						<h2>More about myself</h2>
-						<p>I enjoy listening to music</p>
-						<p>Work out</p>
-						<p>Video games</p>
-						<p>Enjoying sushi with friends</p>
+						<h2>About myself</h2>
+						<li>Enjoys music.</li>
+						<li>Lift weights.</li>
+						<li>Programming</li>
+						<li>Hanging out with friends.</li>
 					</div>
 				</div>
 			</div>

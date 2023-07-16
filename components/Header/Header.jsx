@@ -8,6 +8,9 @@ const Header = () => {
 			<nav className={styles.nav}>
 				<div className={styles.left}>
 					<li>
+						<h3>Brandon Hach</h3>
+					</li>
+					<li>
 						<Link href={"/"}>Github</Link>
 					</li>
 					<li>

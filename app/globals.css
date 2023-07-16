@@ -3,3 +3,24 @@
 	padding: 0;
 	margin: 0;
 }
+
+h1 {
+	color: var(--text-color);
+}
+
+h2 {
+	color: var(--text-color);
+}
+
+p {
+	color: var(--text-color);
+}
+
+:root {
+	--primary-color: #3e4251;
+	--secondary-color: #fffefe;
+	--tertiary-color: #77a9c5;
+	--tertiary-color-2: #4d2e36;
+	--text-color: #e0e2e5;
+	/* Add more color variables as needed... */
+}
