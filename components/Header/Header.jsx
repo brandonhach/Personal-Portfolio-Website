@@ -10,6 +10,8 @@ const Header = () => {
 					<li>
 						<h3>Brandon Hach</h3>
 					</li>
+				</div>
+				<div className={styles.mid}>
 					<li>
 						<Link href={"https://github.com/brandonhach "} target="_blank">
 							Github
