@@ -20,9 +20,8 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: row;
-	width: 500px;
-	height: 500px;
-	border: 1px solid var(--tertiary-color);
+	width: 600px;
+	height: 300px;
 }
 
 .container_item_2 {
@@ -33,6 +32,14 @@
 	gap: 10px;
 	padding-top: 40px;
 	width: 500px;
+}
+
+.container_item_2 h1 {
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 0.15em solid var(--text-color);
+	width: 100%; /* Adjust this based on the actual width of your text content */
+	animation: typing 1.9s steps(20, end), blink-caret 0.9s step-end infinite, moveUp 1s 2s forwards;
 }
 
 .item_2_right img {
@@ -72,4 +79,23 @@
 
 .container_item_4 li {
 	color: var(--text-color);
+}
+
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	} /* This should match the width set for .header */
+}
+
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: var(--text-color);
+	}
 }

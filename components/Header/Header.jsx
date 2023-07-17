@@ -11,13 +11,19 @@ const Header = () => {
 						<h3>Brandon Hach</h3>
 					</li>
 					<li>
-						<Link href={"/"}>Github</Link>
+						<Link href={"https://github.com/brandonhach "} target="_blank">
+							Github
+						</Link>
 					</li>
 					<li>
-						<Link href={"/"}>Linkedin</Link>
+						<Link href={"https://www.linkedin.com/in/brandon-hach/"} target="_blank">
+							Linkedin
+						</Link>
 					</li>
 					<li>
-						<Link href={"/"}>Resume</Link>
+						<Link href={"/"} target="_blank">
+							Resume
+						</Link>
 					</li>
 				</div>
 				<div className={styles.right}>
