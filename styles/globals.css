@@ -18,10 +18,12 @@ p {
 }
 
 :root {
-	--primary-color: #3e4251;
+	--primary-color: linear-gradient(to right, #2c3e50, #bdc3c7);
+	--primary-color-light: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
 	--secondary-color: #fffefe;
 	--tertiary-color: #77a9c5;
 	--tertiary-color-2: #4d2e36;
 	--text-color: #e0e2e5;
+	--button-color-1: ;
 	/* Add more color variables as needed... */
 }
