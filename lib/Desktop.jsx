@@ -22,7 +22,7 @@ export function Model(props) {
 	});
 	return (
 		<group ref={modelRef} {...props} dispose={null}>
-			<group scale={0.015} position={[0, 0, 0]} castShadow {...props}>
+			<group scale={0.015} position={[4, -3, 0]} castShadow {...props}>
 				<mesh
 					geometry={nodes["Object_782_OnTheFly-bg_0"].geometry}
 					material={materials["Material.074_40"]}

@@ -5,6 +5,7 @@ import aries from "../../public/aries.png";
 import { Canvas } from "react-three-fiber";
 import { Model } from "@/lib/Desktop";
 import { OrbitControls } from "@react-three/drei";
+import { motion, variants, staggerChildren } from "framer-motion";
 
 const About = () => {
 	const [loading, setLoading] = useState(true);
@@ -21,16 +22,12 @@ const About = () => {
 			<div className={styles.container}>
 				<div className={styles.container_items}>
 					<div className={styles.container_item_1}>
-						<Canvas camera={{ position: [28, 10, 0], fov: 50, castShadow: true }}>
+						<Canvas camera={{ position: [27, 3, 0], fov: 50, castShadow: true }}>
 							<pointLight position={[0, 0, 0]} intensity={2} castShadow />
 							<ambientLight intensity={0.3}></ambientLight>
 							<Suspense fallback={null}></Suspense>
 							<Model />
-							<OrbitControls
-								enableZoom={false}
-								maxPolarAngle={Math.PI / 2}
-								minPolarAngle={Math.PI / 2}
-								target={[0, 5, 0]}></OrbitControls>
+							<OrbitControls enableZoom={true}></OrbitControls>
 						</Canvas>
 					</div>
 				</div>
@@ -62,7 +59,7 @@ const About = () => {
 						<div className={styles.container_items}>
 							<div className={styles.container_item_4}>
 								<h2>About myself</h2>
-								<li>Enjoys music.</li>
+								<li>Enjoys listening to vinyl sets.</li>
 								<li>Lift weights.</li>
 								<li>Programming</li>
 								<li>Hanging out with friends.</li>
