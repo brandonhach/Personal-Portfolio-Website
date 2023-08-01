@@ -23,7 +23,7 @@ const Contact = () => {
 							<ambientLight intensity={0.3}></ambientLight>
 							<Suspense fallback={null}></Suspense>
 							<Model />
-							<OrbitControls enableZoom={true}></OrbitControls>
+							<OrbitControls enableZoom={false}></OrbitControls>
 						</Canvas>
 					</div>
 					<div className={styles.container_form_email}>
