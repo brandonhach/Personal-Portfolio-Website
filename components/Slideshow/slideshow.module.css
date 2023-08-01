@@ -1,0 +1,44 @@
+.container {
+	display: flex;
+}
+
+.slideshow {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: calc(16 / 9);
+	position: relative;
+	overflow: hidden;
+	border-radius: 16px;
+}
+
+.slideshow button {
+	font-size: 18px;
+	width: 32px;
+	aspect-ratio: 1;
+	border-radius: 32px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	color: white;
+}
+.slideshow button:hover {
+	cursor: pointer;
+}
+
+.prevBtn {
+	position: absolute;
+	top: 50%;
+	left: 16px;
+	transform: translateY(-50%);
+}
+
+.nextBtn {
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	transform: translateY(-50%);
+}
+
+.img {
+}

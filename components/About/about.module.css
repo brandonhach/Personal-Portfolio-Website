@@ -96,6 +96,10 @@
 	cursor: pointer;
 }
 
+.container_item_1 Canvas:hover {
+	cursor: pointer;
+}
+
 .container_item_4 {
 	display: flex;
 	justify-content: center;

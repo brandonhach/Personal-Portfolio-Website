@@ -10,7 +10,7 @@ const Contact = () => {
 		<>
 			<div className={styles.container}>
 				<div className={styles.container_info}>
-					<h1>Keep In Touch.</h1>
+					<h1>👋 Keep In Touch.</h1>
 					<h3>
 						I'm currently specializing in <b>Full-Stack Development</b>.
 					</h3>

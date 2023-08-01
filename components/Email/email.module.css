@@ -28,6 +28,7 @@
 	resize: none;
 	color: var(--secondary-color);
 	border-radius: 10px;
+	padding-left: 10px;
 }
 
 .form_item input[type="text"]:focus,

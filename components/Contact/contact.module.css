@@ -46,6 +46,10 @@
 	width: 500px;
 }
 
+.container_form_canvas Canvas:hover {
+	cursor: pointer;
+}
+
 .container_form_email {
 	height: 500px;
 	width: 500px;
