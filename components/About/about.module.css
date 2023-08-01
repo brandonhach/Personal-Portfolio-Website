@@ -4,7 +4,7 @@
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	height: 150vh;
+	height: 106vh;
 	background: var(--primary-color);
 	padding-top: 60px;
 	margin-top: -50px;
@@ -14,7 +14,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	gap: 20px;
+	gap: 10px;
 }
 .container_item_1 {
 	display: flex;
@@ -30,17 +30,47 @@
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
-	gap: 10px;
-	padding-top: 40px;
 	width: 500px;
+	height: 150px;
 }
 
-.container_item_2 h1 {
+.intro {
 	white-space: nowrap;
 	overflow: hidden;
 	border-right: 0.15em solid var(--text-color);
-	width: 100%; /* Adjust this based on the actual width of your text content */
-	animation: typing 1.9s steps(20, end), blink-caret 0.9s step-end infinite, moveUp 1s 2s forwards;
+	width: 81%; /* Adjust this based on the actual width of your text content */
+	animation: typing 1.9s steps(20, end), blink-caret 0.9s, moveUp 1s 2s forwards,
+		hide-caret 0.1s 1.9s forwards;
+	animation-delay: 1s;
+	font-size: 25px;
+	color: var(--tertiary-color);
+}
+
+.name {
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 0.15em solid var(--text-color);
+	width: 85%; /* Adjust this based on the actual width of your text content */
+	animation: typing 1.53s steps(20, end), blink-caret 0.9s step-end infinite,
+		moveUp 1s 2s forwards;
+	animation-delay: 2.5s;
+	font-size: 40px;
+	animation-fill-mode: backwards;
+}
+
+.container_item_3_info {
+	margin: 10px;
+	display: flex;
+
+	flex-direction: column;
+	gap: 5px;
+	font-size: 16px;
+}
+
+.container_item_3_info b {
+	color: var(--tertiary-color);
+	font-weight: bolder;
+	line-height: 1.5;
 }
 
 .item_2_right img {
@@ -53,6 +83,8 @@
 	align-items: start;
 	flex-direction: column;
 	width: 500px;
+	gap: 5px;
+	font-size: 15px;
 }
 
 .container_item_3 h2 {
@@ -79,9 +111,11 @@
 @keyframes typing {
 	from {
 		width: 0;
+		opacity: 1;
 	}
 	to {
-		width: 100%;
+		width: 85%;
+		opacity: 1;
 	} /* This should match the width set for .header */
 }
 
@@ -95,6 +129,15 @@
 	}
 }
 
+@keyframes hide-caret {
+	0% {
+		border-right-color: var(--text-color);
+	}
+	100% {
+		border-right-color: transparent;
+	}
+}
+
 .container_items button {
 	background-image: linear-gradient(to right, #e6dada 0%, #274046 51%, #e6dada 100%);
 	margin: 10px;
@@ -103,7 +146,7 @@
 	transition: 0.5s;
 	background-size: 200% auto;
 	color: white;
-	box-shadow: 0 0 20px #eee;
+	box-shadow: 0 0 2px #eee;
 	border-radius: 10px;
 	display: block;
 }
@@ -111,5 +154,9 @@
 .container_items button:hover {
 	background-position: right center; /* change the direction of the change here */
 	color: #fff;
+	text-decoration: none;
+}
+
+.LinkButton {
 	text-decoration: none;
 }

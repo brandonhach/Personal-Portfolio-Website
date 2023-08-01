@@ -1,0 +1,18 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.footer b {
+	color: var(--tertiary-color);
+	font-weight: 50;
+}
+
+.footer p {
+	font-weight: 50;
+}

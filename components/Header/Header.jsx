@@ -29,9 +29,7 @@ const Header = () => {
 					</li>
 				</div>
 				<div className={styles.right}>
-					<li>
-						<button>ICON</button>
-					</li>
+					<Link href={"/"}>Home</Link>
 				</div>
 			</nav>
 		</>

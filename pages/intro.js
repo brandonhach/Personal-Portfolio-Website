@@ -1,9 +1,9 @@
+import Intro from "@/components/Intro/Intro";
+
 export function intro() {
 	return (
 		<>
-			<div>
-				<h1>hi</h1>
-			</div>
+			<Intro></Intro>
 		</>
 	);
 }
