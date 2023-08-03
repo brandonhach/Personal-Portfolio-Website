@@ -19,9 +19,10 @@
 }
 
 .item_left {
-	height: 400px;
-	width: 65%;
+	width: 55%;
+	height: 30%;
 	border-radius: 15px;
+	overflow: hidden;
 }
 
 .container_right {
@@ -35,9 +36,10 @@
 }
 
 .item_right {
-	height: 350px;
-	width: 75%;
 	border-radius: 15px;
+	width: 75%;
+	height: 40%;
+	overflow: hidden;
 }
 
 .container h1 {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./slideshow.module.css";
-import Image from "next/image";
+
 import { motion, AnimatePresence } from "framer-motion";
 
 const SlideShow = ({ imageArray }) => {
@@ -25,14 +25,18 @@ const SlideShow = ({ imageArray }) => {
 		<>
 			<div className={styles.container}>
 				<div className={styles.slideshow}>
-					<Image
-						src={imageArray[index]}
-						className={styles.img}
-						layout="fill"
-						objectFit="cover"
-						quality={100}
-						loading="lazy"
-						alt></Image>
+					<AnimatePresence>
+						<motion.img
+							src={imageArray[index]}
+							key={imageArray[index]}
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							exit={{ opacity: 0 }}
+							whileHover={{ scale: 1.05 }}
+							onHoverStart={(e) => {}}
+							onHoverEnd={(e) => {}}
+							className={styles.img}></motion.img>
+					</AnimatePresence>
 
 					<button className={styles.prevBtn} onClick={prevStep}>
 						⬅️

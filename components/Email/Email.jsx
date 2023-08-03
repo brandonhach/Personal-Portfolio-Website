@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./email.module.css";
+import { motion } from "framer-motion";
 
 const Email = () => {
 	return (
@@ -31,9 +32,13 @@ const Email = () => {
 							className={styles.inputSpace}></textarea>
 						<br />
 					</div>
-					<div className={styles.form_item}>
+					<motion.div
+						whileHover={{ scale: 1.01 }}
+						onHoverStart={(e) => {}}
+						onHoverEnd={(e) => {}}
+						className={styles.form_item}>
 						<input type="submit" value="Submit" id={styles.submitBtn} />
-					</div>
+					</motion.div>
 				</form>
 			</div>
 		</>

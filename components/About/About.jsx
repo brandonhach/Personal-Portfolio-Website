@@ -60,7 +60,11 @@ const About = () => {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 1, delay: 0.5 }}>
 							<div className={styles.container_items}>
-								<div className={styles.container_item_3}>
+								<motion.div
+									className={styles.container_item_3}
+									whileHover={{ scale: 1.05 }}
+									onHoverStart={(e) => {}}
+									onHoverEnd={(e) => {}}>
 									<h2>⚡About me</h2>
 									<div className={styles.container_item_3_info}>
 										<p>
@@ -92,7 +96,7 @@ const About = () => {
 											<b> Publix subs</b> are also his favorite food.
 										</p>
 									</div>
-								</div>
+								</motion.div>
 								{/* <Link className={styles.LinkButton} href={"/portfolio"}>
 									<button>My Portfolio</button>
 								</Link> */}

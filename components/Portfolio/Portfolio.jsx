@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./portfolio.module.css";
-
 import SlideShow from "../Slideshow/SlideShow";
 import Link from "next/link";
+import ScrollAnimation from "../FramerMotionAnimation/ScrollAnimation";
 
 const Portfolio = () => {
 	const imageListMarco = [
@@ -44,7 +44,7 @@ const Portfolio = () => {
 					</div>
 
 					<div className={styles.item_left}>
-						<SlideShow imageArray={imageListEmail}></SlideShow>
+						<SlideShow imageArray={imageListTutor}></SlideShow>
 					</div>
 					<div className={styles.item_info}>
 						<h2>

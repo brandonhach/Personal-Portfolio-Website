@@ -1,20 +1,36 @@
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "framer-motion";
 
-const ScrollAnimation = ({ className }) => {
-	const [inView, setInView] = useState(false);
+const ScrollAnimation = ({ children, delayTime, xInitial, xBegin, yInitial, yBegin }) => {
+	const ref = useRef(null);
+	const isInView = useInView(ref);
+	const animation = useAnimation();
 
 	useEffect(() => {
-		const handleScroll = () => {
-			const mainContainer = document.querySelectorAll(className);
-		};
+		if (isInView) {
+			animation.start({
+				x: xBegin,
+				y: yBegin,
+				transition: {
+					duration: 0.75,
+					delay: delayTime,
+				},
+				opacity: 100,
+			});
+		}
+		if (!isInView) {
+			animation.start({ opacity: 0, x: xInitial, y: yInitial });
+		}
+	}, [isInView]);
 
-		return () => {
-			second;
-		};
-	}, [third]);
-
-	return <></>;
+	return (
+		<>
+			<div ref={ref}>
+				<motion.div animate={animation}>{children}</motion.div>
+			</div>
+		</>
+	);
 };
 
 export default ScrollAnimation;
