@@ -5,8 +5,7 @@ import aries from "../../public/aries.png";
 import { Canvas } from "react-three-fiber";
 import { Model } from "@/lib/Desktop";
 import { OrbitControls } from "@react-three/drei";
-import { motion, variants, staggerChildren } from "framer-motion";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 const About = () => {
 	const [loading, setLoading] = useState(true);
@@ -79,8 +78,8 @@ const About = () => {
 											<b> Automation</b>.
 										</p>
 										<p>
-											He enjoys collaborating with other people on their open
-											source projects.
+											He enjoys collaborating with other people on personal
+											projects.
 										</p>
 										<p>
 											When he's not coding, he spents his time listening to

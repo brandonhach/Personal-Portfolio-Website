@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./portfolio.module.css";
-import Image from "next/image";
+
 import SlideShow from "../Slideshow/SlideShow";
+import Link from "next/link";
 
 const Portfolio = () => {
 	const imageListMarco = [
@@ -14,7 +15,6 @@ const Portfolio = () => {
 		"/Images/TutoringApp/1.png",
 		"/Images/TutoringApp/2.png",
 		"/Images/TutoringApp/3.png",
-		"/Images/TutoringApp/4.png",
 	];
 
 	const imageListEmail = [];
@@ -26,18 +26,33 @@ const Portfolio = () => {
 						<SlideShow imageArray={imageListTutor}></SlideShow>
 					</div>
 					<div className={styles.item_info}>
-						<h2>🤖 Ai Tutoring Web App Concept</h2>
+						<h2>
+							🤖{" "}
+							<Link
+								href={"https://github.com/brandonhach/AI-Tutoring-App"}
+								target="_blank">
+								Ai Tutoring Web App Concept
+							</Link>
+						</h2>
 						<p>
 							<b>Java Springboot</b> + <b> Next.js</b>
 						</p>
-						<p>Collaborated with a friend.</p>
+						<p>
+							Communicated with OpenAI API to create a chatbot in collaboration with a
+							partner.
+						</p>
 					</div>
 
 					<div className={styles.item_left}>
 						<SlideShow imageArray={imageListEmail}></SlideShow>
 					</div>
 					<div className={styles.item_info}>
-						<h2>📧 Personal Email Service</h2>
+						<h2>
+							📧{" "}
+							<Link href={"https://github.com/brandonhach "} target="_blank">
+								Personal Email Service
+							</Link>
+						</h2>
 						<p>
 							<b>Java Springboot </b>
 						</p>
@@ -49,11 +64,22 @@ const Portfolio = () => {
 						<SlideShow imageArray={imageListMarco}></SlideShow>
 					</div>
 					<div className={styles.item_info}>
-						<h2>🍗 Marco Nutrient Tracker</h2>
+						<h2>
+							🍗{" "}
+							<Link
+								href={"https://github.com/OrinSparks/MacroTracker"}
+								target="_blank">
+								Marco Nutrient Tracker
+							</Link>
+						</h2>
 						<p>
 							<b>React.js</b> + <b> Firebase.js</b>
 						</p>
-						<p>Collaborated with friends.</p>
+						<p>
+							A simple marco nutrient tracker where user's can create a personal
+							account to document their own nutritional goal. Developed in a group of
+							three people.
+						</p>
 					</div>
 				</div>
 			</div>

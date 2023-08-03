@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./slideshow.module.css";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 const SlideShow = ({ imageArray }) => {
 	const [index, setIndex] = useState(0);
@@ -24,7 +25,15 @@ const SlideShow = ({ imageArray }) => {
 		<>
 			<div className={styles.container}>
 				<div className={styles.slideshow}>
-					<Image src={imageArray[index]} className={styles.img} layout="fill"></Image>
+					<Image
+						src={imageArray[index]}
+						className={styles.img}
+						layout="fill"
+						objectFit="cover"
+						quality={100}
+						loading="lazy"
+						alt></Image>
+
 					<button className={styles.prevBtn} onClick={prevStep}>
 						⬅️
 					</button>

@@ -20,8 +20,7 @@
 
 .item_left {
 	height: 400px;
-	width: 550px;
-	border: 2px solid white;
+	width: 65%;
 	border-radius: 15px;
 }
 
@@ -43,15 +42,30 @@
 
 .container h1 {
 	font-size: 50px;
-	color: var(--secondary-color);
+	color: var(--text-color);
 }
 
 .container p {
-	text-indent: 40px;
+	text-indent: 0 px;
+	text-align: left;
+	margin-left: 40px;
 }
 
 .container b {
 	color: var(--tertiary-color);
 	font-weight: bolder;
 	line-height: 1.5;
+}
+
+.item_info {
+	width: 55%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	text-align: center;
+}
+
+.item_info a {
+	color: var(--text-color);
 }

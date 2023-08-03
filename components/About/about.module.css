@@ -85,6 +85,8 @@
 	width: 500px;
 	gap: 5px;
 	font-size: 15px;
+	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.55);
+	padding: 10px;
 }
 
 .container_item_3 h2 {

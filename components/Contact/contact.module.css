@@ -9,13 +9,13 @@
 }
 
 .container h1 {
-	color: var(--secondary-color);
+	color: var(--text-color);
 	font-size: 50px;
 }
 
 .container h3 {
 	font-size: 20px;
-	color: var(--secondary-color);
+	color: var(--text-color);
 }
 
 .container b {
