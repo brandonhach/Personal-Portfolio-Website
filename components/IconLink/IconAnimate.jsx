@@ -17,7 +17,7 @@ const IconAnimate = ({ icon, animation, label }) => {
 					onMouseOver={() => setAnimate(true)}
 					onMouseOut={() => setAnimate(false)}
 				/>
-				<h4>{label}</h4>
+				<h4 className={styles.h4Icon}>{label}</h4>
 			</div>
 		</>
 	);

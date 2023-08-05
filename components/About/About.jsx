@@ -50,7 +50,13 @@ const About = () => {
 										<p>Charlotte, North Carolina ( Student / Developer )</p>
 									</div>
 									<div className={styles.item_2_right}>
-										<img src={aries} alt="" height={100} width={100} />
+										<img
+											src={aries}
+											alt=""
+											height={100}
+											width={100}
+											alt="Portrait of Brandon"
+										/>
 									</div>
 								</div>
 							</div>

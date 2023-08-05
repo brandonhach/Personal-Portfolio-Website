@@ -46,11 +46,20 @@
 	width: 500px;
 }
 
+.canvas {
+	height: 100%;
+	width: 100%;
+}
+
 .container_form_canvas Canvas:hover {
 	cursor: pointer;
 }
 
 .container_form_email {
 	height: 500px;
-	width: 500px;
+	width: 700px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

@@ -7,21 +7,27 @@ Source: https://sketchfab.com/3d-models/gaming-desktop-pc-d1d8282c9916438091f11a
 Title: Gaming Desktop PC
 */
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "react-three-fiber";
 
 export function Model(props) {
 	const modelRef = useRef();
 	const { nodes, materials } = useGLTF("/models/desktop/desktop.gltf");
+	const [isSpinning, setIsSpinning] = useState(true);
 
 	useFrame((state, delta) => {
-		if (modelRef.current) {
+		if (modelRef.current && isSpinning) {
 			modelRef.current.rotation.y += delta * 0.5;
 		}
 	});
 	return (
-		<group ref={modelRef} {...props} dispose={null}>
+		<group
+			ref={modelRef}
+			{...props}
+			dispose={null}
+			onPointerUp={() => setIsSpinning(true)}
+			onPointerDown={() => setIsSpinning(false)}>
 			<group scale={0.015} position={[4, -3, 0]} castShadow {...props}>
 				<mesh
 					geometry={nodes["Object_782_OnTheFly-bg_0"].geometry}
