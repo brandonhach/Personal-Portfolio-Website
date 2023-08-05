@@ -63,6 +63,7 @@
 .error {
 	font-size: 13px;
 	color: #ae2c4d;
+	margin-top: 2px;
 }
 
 #submitBtn {

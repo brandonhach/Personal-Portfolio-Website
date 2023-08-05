@@ -16,7 +16,7 @@ export default function Home() {
 			<Header></Header>
 			<About></About>
 			<Section></Section>
-			<Portfolio></Portfolio>
+			<div ref={ref}>{inView && <Portfolio></Portfolio>}</div>
 			<div ref={ref}>{inView && <Contact></Contact>}</div>
 			<Footer></Footer>
 		</>

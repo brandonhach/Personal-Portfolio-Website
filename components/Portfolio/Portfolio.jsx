@@ -2,28 +2,22 @@ import React from "react";
 import styles from "./portfolio.module.css";
 import SlideShow from "../Slideshow/SlideShow";
 import Link from "next/link";
-import ScrollAnimation from "../FramerMotionAnimation/ScrollAnimation";
 
 const Portfolio = () => {
-	const imageListMarco = [
-		"/Images/MarcoTracker/1.png",
-		"/Images/MarcoTracker/2.png",
-		"/Images/MarcoTracker/3.png",
+	const videoListMarco = ["/Videos/MarcoTracker/1.mp4", "/Videos/MarcoTracker/2.mp4"];
+	const videoListTutor = [
+		"/Videos/TutoringApp/1.mp4",
+		"/Videos/TutoringApp/2.mp4",
+		"/Videos/TutoringApp/3.mp4",
 	];
+	const videoListEmail = ["/Videos/MarcoTracker/1.mp4", "/Videos/MarcoTracker/2.mp4"];
 
-	const imageListTutor = [
-		"/Images/TutoringApp/1.png",
-		"/Images/TutoringApp/2.png",
-		"/Images/TutoringApp/3.png",
-	];
-
-	const imageListEmail = [];
 	return (
 		<>
 			<div className={styles.container}>
 				<div className={styles.container_left}>
 					<div className={styles.item_left}>
-						<SlideShow imageArray={imageListTutor}></SlideShow>
+						<SlideShow videoArray={videoListTutor}></SlideShow>
 					</div>
 					<div className={styles.item_info}>
 						<h2>
@@ -44,7 +38,7 @@ const Portfolio = () => {
 					</div>
 
 					<div className={styles.item_left}>
-						<SlideShow imageArray={imageListTutor}></SlideShow>
+						<SlideShow videoArray={videoListEmail}></SlideShow>
 					</div>
 					<div className={styles.item_info}>
 						<h2>
@@ -61,7 +55,7 @@ const Portfolio = () => {
 				<div className={styles.container_right}>
 					<h1>Projects I worked on.</h1>
 					<div className={styles.item_right}>
-						<SlideShow imageArray={imageListMarco}></SlideShow>
+						<SlideShow videoArray={videoListMarco}></SlideShow>
 					</div>
 					<div className={styles.item_info}>
 						<h2>
