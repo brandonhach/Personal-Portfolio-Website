@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
+import styles from "./animation.module.css";
 
 const ScrollAnimation = ({ children, delayTime, xInitial, xBegin, yInitial, yBegin }) => {
 	const ref = useRef(null);
@@ -26,7 +27,7 @@ const ScrollAnimation = ({ children, delayTime, xInitial, xBegin, yInitial, yBeg
 
 	return (
 		<>
-			<div ref={ref}>
+			<div className={styles.main} ref={ref}>
 				<motion.div animate={animation}>{children}</motion.div>
 			</div>
 		</>
