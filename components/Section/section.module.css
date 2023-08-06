@@ -38,3 +38,52 @@
 	font-size: 20px;
 	color: var(--tertiary-color);
 }
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+	.container {
+		width: 376px;
+		height: 100vh;
+	}
+	.container_item {
+		height: 600px;
+		width: 200px;
+	}
+}
+
+/* Large phones */
+@media only screen and (min-width: 426px) and (max-width: 525px) {
+	/* Styles for large phones (e.g., iPhone 6, 7, 8 Plus) go here */
+	.container {
+		width: 426px;
+		height: 100vh;
+	}
+	.container_item {
+		height: 600px;
+		width: 225px;
+	}
+}
+
+/* Small tablets */
+@media only screen and (min-width: 526px) and (max-width: 768px) {
+	/* Styles for small tablets (e.g., iPad Mini) go here */
+	.container {
+		width: 526px;
+		height: 100vh;
+	}
+	.container_item {
+		height: 600px;
+		width: 225px;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	/* Styles for large tablets (e.g., standard iPad, iPad Air) go here */
+	.container {
+		width: 769px;
+		height: 100vh;
+	}
+	.container_item {
+		height: 600px;
+		width: 350px;
+	}
+}

@@ -3,8 +3,8 @@
 	justify-content: start;
 	align-items: center;
 	flex-direction: column;
-	width: 100%;
-	height: 106vh;
+	width: 100vw;
+	height: 100vh;
 	background: var(--primary-color);
 	padding-top: 60px;
 	margin-top: -50px;
@@ -61,7 +61,6 @@
 .container_item_3_info {
 	margin: 10px;
 	display: flex;
-
 	flex-direction: column;
 	gap: 5px;
 	font-size: 16px;
@@ -87,11 +86,6 @@
 	font-size: 15px;
 	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.55);
 	padding: 10px;
-}
-
-.container_item_3 h2 {
-}
-.container_item_3 p {
 }
 
 .container_items button:hover {
@@ -122,7 +116,7 @@
 	to {
 		width: 85%;
 		opacity: 1;
-	} /* This should match the width set for .header */
+	}
 }
 
 @keyframes blink-caret {
@@ -158,11 +152,87 @@
 }
 
 .container_items button:hover {
-	background-position: right center; /* change the direction of the change here */
+	background-position: right center;
 	color: #fff;
 	text-decoration: none;
 }
 
 .LinkButton {
 	text-decoration: none;
+}
+
+/* === Mobile Devices === */
+
+/* Small phones */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+	/* Styles for small phones (e.g., iPhone 5, SE) go here */
+}
+
+/* Medium phones */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+	/* Styles for medium phones (e.g., iPhone 6, 7, 8, X) go here */
+	.container {
+		width: 376px;
+		height: 100vh;
+		padding-top: 100px;
+		margin-top: 0px;
+	}
+
+	.container_item_1 {
+		width: 376px;
+	}
+	.container_item_2 {
+		width: 376px;
+	}
+	.container_item_3 {
+		width: 376px;
+	}
+
+	.name {
+		width: 98%; /* Adjust this based on the actual width of your text content */
+	}
+}
+
+/* Large phones */
+@media only screen and (min-width: 426px) and (max-width: 525px) {
+	/* Styles for large phones (e.g., iPhone 6, 7, 8 Plus) go here */
+	.container {
+		width: 426px;
+		height: 100vh;
+		padding-top: 100px;
+		margin-top: 0px;
+	}
+
+	.container_item_1 {
+		width: 426px;
+	}
+	.container_item_2 {
+		width: 426px;
+	}
+	.container_item_3 {
+		width: 426px;
+	}
+
+	.name {
+		width: 98%; /* Adjust this based on the actual width of your text content */
+	}
+}
+
+/* === Tablets === */
+
+/* Small tablets */
+@media only screen and (min-width: 526px) and (max-width: 768px) {
+	/* Styles for small tablets (e.g., iPad Mini) go here */
+}
+
+/* Large tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	/* Styles for large tablets (e.g., standard iPad, iPad Air) go here */
+}
+
+/* === Laptops and Desktops === */
+
+/* Small laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+	/* Styles for small laptops (e.g., 13-inch MacBook Air) go here */
 }

@@ -63,3 +63,106 @@
 	justify-content: center;
 	align-items: center;
 }
+
+/* Medium phones */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+	/* Styles for medium phones (e.g., iPhone 6, 7, 8, X) go here */
+	.container h1 {
+		font-size: 25px;
+	}
+
+	.container h3 {
+		font-size: 12px;
+	}
+	.container_form_email {
+		height: 450px;
+		width: 400px;
+	}
+	.container_form_canvas {
+		height: 200px;
+		width: 200px;
+	}
+	.container_form {
+		flex-direction: column;
+		height: 1000px;
+		margin-bottom: 10%;
+	}
+}
+
+/* Large phones */
+@media only screen and (min-width: 426px) and (max-width: 525px) {
+	/* Styles for large phones (e.g., iPhone 6, 7, 8 Plus) go here */
+	.container h1 {
+		font-size: 25px;
+	}
+
+	.container h3 {
+		font-size: 12px;
+	}
+	.container_form_email {
+		height: 450px;
+		width: 400px;
+	}
+	.container_form_canvas {
+		height: 300px;
+		width: 400px;
+	}
+	.container_form {
+		flex-direction: column;
+		height: 1000px;
+		margin-bottom: 15%;
+	}
+}
+
+/* === Tablets === */
+
+/* Small tablets */
+@media only screen and (min-width: 526px) and (max-width: 768px) {
+	.container h1 {
+		font-size: 25px;
+	}
+
+	.container h3 {
+		font-size: 15px;
+	}
+	.container_form_email {
+		height: 450px;
+		width: 400px;
+	}
+	.container_form_canvas {
+		height: 300px;
+		width: 400px;
+	}
+	.container_form {
+		flex-direction: column;
+		height: 1000px;
+		margin-bottom: 30%;
+	}
+	/* Styles for small tablets (e.g., iPad Mini) go here */
+}
+
+/* Large tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	/* Styles for large tablets (e.g., standard iPad, iPad Air) go here */
+	.container_form_email {
+		height: 450px;
+		width: 400px;
+	}
+	.container_form_canvas {
+		height: 400px;
+		width: 400px;
+	}
+}
+
+/* Small laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+	/* Styles for small laptops (e.g., 13-inch MacBook Air) go here */
+	.container_form_email {
+		height: 450px;
+		width: 400px;
+	}
+	.container_form_canvas {
+		height: 400px;
+		width: 500px;
+	}
+}

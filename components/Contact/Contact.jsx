@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useEffect } from "react";
+import React, { Suspense } from "react";
 import styles from "./contact.module.css";
 import { Canvas } from "react-three-fiber";
 import { Model } from "@/lib/Robot";

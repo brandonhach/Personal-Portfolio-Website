@@ -69,3 +69,50 @@
 .h4Icon:hover {
 	color: white;
 }
+
+/* Medium phones */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+	/* Styles for medium phones (e.g., iPhone 6, 7, 8, X) go here */
+	.nav {
+		width: 376px;
+		height: 60px;
+		flex-direction: column;
+	}
+}
+
+/* Large phones */
+@media only screen and (min-width: 426px) and (max-width: 525px) {
+	/* Styles for large phones (e.g., iPhone 6, 7, 8 Plus) go here */
+	.nav {
+		width: 426px;
+		height: 60px;
+		flex-direction: column;
+	}
+}
+
+/* === Tablets === */
+
+/* Small tablets */
+@media only screen and (min-width: 526px) and (max-width: 768px) {
+	/* Styles for small tablets (e.g., iPad Mini) go here */
+	.nav {
+		width: 526px;
+		height: 60px;
+	}
+}
+
+/* Large tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	/* Styles for large tablets (e.g., standard iPad, iPad Air) go here */
+	.nav {
+		width: 769px;
+		height: 60px;
+	}
+}
+
+/* === Laptops and Desktops === */
+
+/* Small laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+	/* Styles for small laptops (e.g., 13-inch MacBook Air) go here */
+}
