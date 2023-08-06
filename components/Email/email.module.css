@@ -80,3 +80,13 @@
 	cursor: pointer;
 	color: white;
 }
+
+.successMsg {
+	color: #5eaa55;
+	margin-left: 10px;
+}
+
+.errorMsg {
+	color: #ae2c4d;
+	margin-left: 10px;
+}

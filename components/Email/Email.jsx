@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styles from "./email.module.css";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 const Email = () => {
 	const {
@@ -10,8 +11,37 @@ const Email = () => {
 		formState: { errors },
 	} = useForm();
 
-	const onSubmit = (data) => console.log(data);
-	console.log("errors", errors);
+	const form = useRef();
+	const [emailStatus, setEmailStatus] = useState(null);
+
+	if (emailStatus === "success") {
+		setTimeout(() => setEmailStatus(null), 15000);
+	}
+	if (emailStatus === "error") {
+		setTimeout(() => setEmailStatus(null), 15000);
+	}
+
+	const [isSubmitting, setIsSubmitting] = useState(false);
+
+	const sendEmail = async (e) => {
+		try {
+			const result = await emailjs.sendForm(
+				"service_rv9p5jf",
+				"template_gu15rkl",
+				form.current,
+				"VJPBEk4HhsDQnAh8b"
+			);
+			console.log(result.text);
+			setEmailStatus("success");
+			setIsSubmitting(true);
+			// Maybe show a success message to the user or clear the form fields
+		} catch (error) {
+			console.log(error.text);
+			// Handle the error, maybe show an error message to the user
+			setEmailStatus("error");
+			setIsSubmitting(false);
+		}
+	};
 
 	return (
 		<>
@@ -19,10 +49,11 @@ const Email = () => {
 				<div className={styles.item}>
 					<h1>Contact Me!</h1>
 
-					<form onSubmit={handleSubmit(onSubmit)}>
+					<form ref={form} onSubmit={handleSubmit(sendEmail)}>
 						{/** Name */}
 						<p className={styles.input_label}>Name *</p>
 						<input
+							name="name"
 							type="text"
 							placeholder="Name"
 							{...register("name", {
@@ -40,6 +71,7 @@ const Email = () => {
 						{/** Email */}
 						<p className={styles.input_label}>Email *</p>
 						<input
+							name="email"
 							type="text"
 							placeholder="Email"
 							{...register("email", {
@@ -56,6 +88,7 @@ const Email = () => {
 						{/** Phone Number */}
 						<p className={styles.input_label}>Phone Number</p>
 						<input
+							name="phone"
 							type="text"
 							placeholder="Phone #"
 							{...register("phone", {
@@ -71,6 +104,7 @@ const Email = () => {
 						{/** Message */}
 						<p className={styles.input_label}>Message *</p>
 						<textarea
+							name="message"
 							rows={5}
 							placeholder="Write Your Message"
 							{...register("message", {
@@ -90,8 +124,23 @@ const Email = () => {
 							whileHover={{ scale: 1.05 }}
 							onHoverStart={(e) => {}}
 							onHoverEnd={(e) => {}}>
-							<input type="submit" value="Send Message" id={styles.submitBtn} />
+							<input
+								type="submit"
+								value="Send Message"
+								disabled={isSubmitting}
+								id={styles.submitBtn}
+							/>
 						</motion.div>
+						{emailStatus === "success" && (
+							<span className={styles.successMsg}>
+								Email sent! If you need to sent another message, refresh!
+							</span>
+						)}
+						{emailStatus === "error" && (
+							<span className={styles.errorMsg}>
+								Email couldn't be sent. Check back or try again later.
+							</span>
+						)}
 					</form>
 				</div>
 			</div>

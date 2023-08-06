@@ -1,11 +1,12 @@
 "use client";
 import React, { Suspense, useState, useEffect } from "react";
 import styles from "./about.module.css";
-import aries from "../../public/aries.png";
 import { Canvas } from "react-three-fiber";
 import { Model } from "@/lib/Desktop";
 import { OrbitControls } from "@react-three/drei";
 import { motion } from "framer-motion";
+import self from "../../public/Images/self.jpg";
+import Image from "next/image";
 
 const About = () => {
 	const [loading, setLoading] = useState(true);
@@ -50,13 +51,11 @@ const About = () => {
 										<p>Charlotte, North Carolina ( Student / Developer )</p>
 									</div>
 									<div className={styles.item_2_right}>
-										<img
-											src={aries}
-											alt=""
+										<Image
+											src={self}
 											height={100}
 											width={100}
-											alt="Portrait of Brandon"
-										/>
+											alt="Portrait of Brandon"></Image>
 									</div>
 								</div>
 							</div>

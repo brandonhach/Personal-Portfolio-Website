@@ -11,7 +11,6 @@ const Portfolio = () => {
 		"/Videos/TutoringApp/2.mp4",
 		"/Videos/TutoringApp/3.mp4",
 	];
-	const videoListEmail = ["/Videos/MarcoTracker/1.mp4", "/Videos/MarcoTracker/2.mp4"];
 
 	return (
 		<>
