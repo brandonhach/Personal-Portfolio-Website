@@ -103,9 +103,6 @@ const About = () => {
 										</p>
 									</div>
 								</motion.div>
-								{/* <Link className={styles.LinkButton} href={"/portfolio"}>
-									<button>My Portfolio</button>
-								</Link> */}
 							</div>
 						</motion.div>
 					</>

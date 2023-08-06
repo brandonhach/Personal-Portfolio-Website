@@ -36,7 +36,7 @@ const Section = () => {
 				<ScrollAnimation delayTime={0.3} xInitial={100} xBegin={0} yInitial={0} yBegin={0}>
 					<div className={styles.container_item}>
 						<Image
-							src="/Images/coding.gif"
+							src="/Videos/coding.gif"
 							width={500}
 							height={500}
 							alt="Codes"></Image>
