@@ -22,7 +22,7 @@ const ScrollAnimation = ({ children, delayTime, xInitial, xBegin, yInitial, yBeg
 		if (!isInView) {
 			animation.start({ opacity: 0, x: xInitial, y: yInitial });
 		}
-	}, [isInView]);
+	}, [isInView, animation, delayTime, xBegin, xInitial, yBegin, yInitial]);
 
 	return (
 		<>

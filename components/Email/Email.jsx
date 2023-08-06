@@ -134,7 +134,7 @@ const Email = () => {
 						)}
 						{emailStatus === "error" && (
 							<span className={styles.errorMsg}>
-								Email couldn't be sent. Check back or try again later.
+								Email couldn&apos;t be sent. Check back or try again later.
 							</span>
 						)}
 					</form>

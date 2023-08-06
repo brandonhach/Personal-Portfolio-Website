@@ -33,7 +33,7 @@ const Header = () => {
 						</Link>
 					</li>
 					<li>
-						<Link href={"/"} target="_blank">
+						<Link href="/PDF/resume.pdf" target="_blank">
 							<IconAnimate
 								animation={"shake"}
 								icon={faFile}

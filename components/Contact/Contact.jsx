@@ -27,7 +27,7 @@ const Contact = () => {
 						yInitial={100}
 						yBegin={0}>
 						<h3>
-							I'm currently specializing in <b>Full-Stack Development</b>.
+							I&apos;m currently specializing in <b>Full-Stack Development</b>.
 						</h3>
 						<h3>Feel free to get in touch to discuss more about your projects!</h3>
 					</ScrollAnimation>

@@ -59,9 +59,9 @@ const Portfolio = () => {
 								<b>React.js</b> + <b> Firebase.js</b>
 							</p>
 							<p>
-								A simple marco nutrient tracker where user's can create a personal
-								account to document their own nutritional goal. Developed in a group
-								of three people.
+								A simple marco nutrient tracker where user&apos;s can create a
+								personal account to document their own nutritional goal. Developed
+								in a group of three people.
 							</p>
 						</div>
 					</div>

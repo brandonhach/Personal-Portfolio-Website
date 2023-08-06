@@ -46,7 +46,7 @@ const About = () => {
 							<div className={styles.container_items}>
 								<div className={styles.container_item_2}>
 									<div className={styles.item_2_left}>
-										<h1 className={styles.intro}>Hey there! I'm- </h1>
+										<h1 className={styles.intro}>Hey there! I&apos;m- </h1>
 										<h1 className={styles.name}>Brandon Hach.</h1>
 										<p>Charlotte, North Carolina ( Student / Developer )</p>
 									</div>
@@ -91,7 +91,8 @@ const About = () => {
 											projects.
 										</p>
 										<p>
-											When he's not coding, he spents his time listening to
+											When he&apos;s not coding, he spents his time listening
+											to
 											<b> old vinyls</b>, <b> lifting weight</b>,
 											<b> tracking marcos</b>, and
 											<b> hanging out with friends</b>.
