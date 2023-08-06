@@ -165,14 +165,8 @@
 /* Small phones */
 @media only screen and (min-width: 320px) and (max-width: 375px) {
 	/* Styles for small phones (e.g., iPhone 5, SE) go here */
-}
-
-/* Medium phones */
-@media only screen and (min-width: 376px) and (max-width: 425px) {
-	/* Styles for medium phones (e.g., iPhone 6, 7, 8, X) go here */
 	.container {
 		width: 100%;
-		height: 110vh;
 		margin-top: 0px;
 	}
 
@@ -180,10 +174,33 @@
 		width: 100%;
 	}
 	.container_item_2 {
-		width: 90%;
+		width: 100%;
 	}
 	.container_item_3 {
-		width: 90%;
+		width: 50%;
+	}
+
+	.name {
+		width: 98%; /* Adjust this based on the actual width of your text content */
+	}
+}
+
+/* Medium phones */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+	/* Styles for medium phones (e.g., iPhone 6, 7, 8, X) go here */
+	.container {
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.container_item_1 {
+		width: 100%;
+	}
+	.container_item_2 {
+		width: 100%;
+	}
+	.container_item_3 {
+		width: 50%;
 	}
 
 	.name {
@@ -196,19 +213,17 @@
 	/* Styles for large phones (e.g., iPhone 6, 7, 8 Plus) go here */
 	.container {
 		width: 100%;
-		height: 110vh;
-		padding-top: 100px;
 		margin-top: 0px;
 	}
 
 	.container_item_1 {
-		width: 426px;
+		width: 100%;
 	}
 	.container_item_2 {
-		width: 426px;
+		width: 100%;
 	}
 	.container_item_3 {
-		width: 426px;
+		width: 50%;
 	}
 
 	.name {
@@ -221,11 +236,47 @@
 /* Small tablets */
 @media only screen and (min-width: 526px) and (max-width: 768px) {
 	/* Styles for small tablets (e.g., iPad Mini) go here */
+	.container {
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.container_item_1 {
+		width: 100%;
+	}
+	.container_item_2 {
+		width: 100%;
+	}
+	.container_item_3 {
+		width: 50%;
+	}
+
+	.name {
+		width: 98%; /* Adjust this based on the actual width of your text content */
+	}
 }
 
 /* Large tablets */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 	/* Styles for large tablets (e.g., standard iPad, iPad Air) go here */
+	.container {
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.container_item_1 {
+		width: 100%;
+	}
+	.container_item_2 {
+		width: 100%;
+	}
+	.container_item_3 {
+		width: 50%;
+	}
+
+	.name {
+		width: 98%; /* Adjust this based on the actual width of your text content */
+	}
 }
 
 /* === Laptops and Desktops === */
@@ -233,4 +284,22 @@
 /* Small laptops */
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
 	/* Styles for small laptops (e.g., 13-inch MacBook Air) go here */
+	.container {
+		width: 100%;
+		margin-top: 0px;
+	}
+
+	.container_item_1 {
+		width: 100%;
+	}
+	.container_item_2 {
+		width: 100%;
+	}
+	.container_item_3 {
+		width: 50%;
+	}
+
+	.name {
+		width: 98%; /* Adjust this based on the actual width of your text content */
+	}
 }
