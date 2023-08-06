@@ -172,7 +172,7 @@
 	/* Styles for medium phones (e.g., iPhone 6, 7, 8, X) go here */
 	.container {
 		width: 100%;
-
+		height: 110vh;
 		margin-top: 0px;
 	}
 
@@ -196,7 +196,7 @@
 	/* Styles for large phones (e.g., iPhone 6, 7, 8 Plus) go here */
 	.container {
 		width: 100%;
-		height: 100vh;
+		height: 110vh;
 		padding-top: 100px;
 		margin-top: 0px;
 	}

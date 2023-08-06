@@ -87,3 +87,122 @@
 .item_info a {
 	color: var(--text-color);
 }
+
+/* === Mobile Devices === */
+
+/* Small phones */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+	/* Styles for small phones (e.g., iPhone 5, SE) go here */
+	.container {
+		flex-direction: column;
+	}
+	.container_left {
+		margin-top: 40px;
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+	.container_right {
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+	.main h1 {
+		font-size: 30px;
+	}
+}
+
+/* Medium phones */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+	/* Styles for medium phones (e.g., iPhone 6, 7, 8, X) go here */
+	.container {
+		flex-direction: column;
+	}
+	.container_left {
+		margin-top: 40px;
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+	.container_right {
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+	.main h1 {
+		font-size: 30px;
+	}
+}
+
+/* Large phones */
+@media only screen and (min-width: 426px) and (max-width: 525px) {
+	/* Styles for large phones (e.g., iPhone 6, 7, 8 Plus) go here */
+	.container {
+		flex-direction: column;
+	}
+	.container_left {
+		margin-top: 40px;
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+	.container_right {
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+	.main h1 {
+		font-size: 30px;
+	}
+}
+
+/* === Tablets === */
+
+/* Small tablets */
+@media only screen and (min-width: 526px) and (max-width: 768px) {
+	/* Styles for small tablets (e.g., iPad Mini) go here */
+	.container {
+		flex-direction: column;
+	}
+	.container_left {
+		margin-top: 40px;
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+	.container_right {
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+
+	.main h1 {
+		font-size: 30px;
+	}
+}
+
+/* Large tablets */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	/* Styles for large tablets (e.g., standard iPad, iPad Air) go here */
+	.container {
+		flex-direction: column;
+	}
+	.container_left {
+		margin-top: 40px;
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+	.container_right {
+		height: 100%;
+		width: 100%;
+		gap: 20px;
+	}
+}
+
+/* === Laptops and Desktops === */
+
+/* Small laptops */
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+	/* Styles for small laptops (e.g., 13-inch MacBook Air) go here */
+}
