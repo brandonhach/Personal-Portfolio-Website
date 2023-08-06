@@ -38,7 +38,7 @@
 	align-items: center;
 	flex-direction: row;
 	height: 600px;
-	width: 1500px;
+	width: 100%;
 }
 
 .container_form_canvas {
