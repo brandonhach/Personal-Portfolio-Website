@@ -68,7 +68,7 @@
 @media only screen and (min-width: 320px) and (max-width: 375px) {
 	/* Styles for small phones (e.g., iPhone 5, SE) go here */
 	.container {
-		height: 110vh;
+		height: 130vh;
 	}
 	.container h1 {
 		font-size: 25px;
@@ -97,7 +97,7 @@
 	/* Styles for medium phones (e.g., iPhone 6, 7, 8, X) go here */
 
 	.container {
-		height: 110vh;
+		height: 130vh;
 	}
 	.container h1 {
 		font-size: 25px;
@@ -125,7 +125,7 @@
 @media only screen and (min-width: 426px) and (max-width: 525px) {
 	/* Styles for large phones (e.g., iPhone 6, 7, 8 Plus) go here */
 	.container {
-		height: 110vh;
+		height: 130vh;
 	}
 	.container h1 {
 		font-size: 25px;
@@ -154,7 +154,7 @@
 /* Small tablets */
 @media only screen and (min-width: 526px) and (max-width: 768px) {
 	.container {
-		height: 110vh;
+		height: 130vh;
 	}
 	.container h1 {
 		font-size: 25px;
