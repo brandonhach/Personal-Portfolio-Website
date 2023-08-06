@@ -18,8 +18,10 @@
 	text-align: center;
 }
 
-.container_item Image {
+.container_item img {
 	border-radius: 33px;
+	height: 500px;
+	width: 500px;
 }
 
 .container_item_skills {
@@ -50,6 +52,10 @@
 		height: 100%;
 		width: 100%;
 	}
+
+	.container_item img {
+		width: 100%;
+	}
 }
 
 /* Large phones */
@@ -63,6 +69,10 @@
 	}
 	.container_item {
 		height: 100%;
+		width: 100%;
+	}
+
+	.container_item img {
 		width: 100%;
 	}
 }
@@ -86,6 +96,10 @@
 	.container_item_skills b {
 		font-size: 12px;
 	}
+
+	.container_item img {
+		width: 100%;
+	}
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -105,5 +119,8 @@
 	}
 	.container_item_skills b {
 		font-size: 12px;
+	}
+	.container_item img {
+		width: 100%;
 	}
 }
