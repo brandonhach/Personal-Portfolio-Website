@@ -31,13 +31,9 @@ const Email = () => {
 				form.current,
 				"VJPBEk4HhsDQnAh8b"
 			);
-			console.log(result.text);
 			setEmailStatus("success");
 			setIsSubmitting(true);
-			// Maybe show a success message to the user or clear the form fields
 		} catch (error) {
-			console.log(error.text);
-			// Handle the error, maybe show an error message to the user
 			setEmailStatus("error");
 			setIsSubmitting(false);
 		}
