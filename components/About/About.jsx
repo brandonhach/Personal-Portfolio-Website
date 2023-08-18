@@ -97,10 +97,6 @@ const About = () => {
 											<b> tracking marcos</b>, and
 											<b> hanging out with friends</b>.
 										</p>
-										<p>
-											Oh, and he enjoys eating <b> poke</b> and <b> sushi</b>.
-											<b> Publix subs</b> are also his favorite food.
-										</p>
 									</div>
 								</motion.div>
 							</div>
