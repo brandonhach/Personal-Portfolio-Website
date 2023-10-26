@@ -15,4 +15,5 @@ This project was built over the summer of 2023. I decided to make one along with
 
 If you found an issue or would like to submit an improvement to this project, please submit an issue using the issues tab above. If you would like to submit a PR with a fix, reference the issue you created!
 
-![image](https://github.com/brandonhach/Personal-Portfolio-Website/assets/58790036/7e51160d-456c-4d0d-9ca5-aa6160152036)
+![image](https://github.com/brandonhach/Personal-Portfolio-Website/assets/58790036/ea141393-2efa-4784-8a6d-14a693b30c61)
+
