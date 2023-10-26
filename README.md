@@ -9,6 +9,7 @@ This project was built over the summer of 2023. I decided to make one along with
 - Contains three.js and React Fiber for immersive and interactive 3D models.
 - Deployed using Vercel's web hosting service integrated into Next.js.
 - Responsive design using standard CSS in order to maintain a clear and concise layout across a variety of mobile platforms.
+- Email.js is used for my contact form which makes it easier for me to receive any potential forms.
 
 ## Find a bug?
 
