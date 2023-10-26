@@ -2,7 +2,7 @@
 
 ## This is my personal portfolio website repository!
 
-This project was built over the summer of 2023. I decided to make one alongside a few of my buddies because we needed a website to display our projects and contact information. So, I wanted to do something different from what my friends were making and decided to use 3D models instead of static pictures. It was instinctively difficult because Next.js is a new technology and there aren't any tutorials anywhere but I got over this obstacle and completed my project. The website layout is inspired by Takuya Matsuyama.
+This project was built over the summer of 2023. I decided to make one alongside a few of my buddies because we needed a website to display our projects and contact information. So, I wanted to do something different from what my friends were making and decided to use 3D models instead of static pictures. It was instinctively difficult because Next.js is a new technology and there aren't any tutorials anywhere but I got over this obstacle and completed my project. 
 
 - Create a custom website with Next.js using React.js.
 - Framer motion was used mainly for transitioning and styling across components.
